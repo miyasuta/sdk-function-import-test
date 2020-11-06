@@ -1,0 +1,7 @@
+{
+  "cat-service": {
+    "directoryName": "catalog-service",
+    "servicePath": "/catalog",
+    "npmPackageName": "catalog-service"
+  }
+}
