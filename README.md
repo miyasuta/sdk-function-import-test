@@ -12,6 +12,6 @@ Calling function import from SAP Cloud SDK returns an empty object, even though 
 1. Go to `data-consumer` folter
 2. Run `npm install`
 3. Run `npm run start:dev`
-4. Open the browser and enter `http://localhost:3000/get-delivery`. You will see an empty object is returned.
+4. Open the browser and enter `http://localhost:3000/get-delivery`. You will see an empty object returned.
 
 
