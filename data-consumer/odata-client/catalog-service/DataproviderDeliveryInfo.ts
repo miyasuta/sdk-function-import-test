@@ -4,7 +4,7 @@
  * This is a generated file powered by the SAP Cloud SDK for JavaScript.
  */
 import { Moment } from 'moment';
-import { ComplexTypeDatePropertyField, ComplexTypeField, ConstructorOrField, EntityV2, FieldType, PropertyMetadata, deserializeComplexTypeV2 } from '@sap-cloud-sdk/core';
+import { ComplexTypeDatePropertyField, ComplexTypeField, ConstructorOrField, EntityV4, FieldType, PropertyMetadata, deserializeComplexTypeV4 } from '@sap-cloud-sdk/core';
 
 /**
  * DataproviderDeliveryInfo
@@ -28,12 +28,12 @@ export function createDataproviderDeliveryInfo(json: any): DataproviderDeliveryI
  * DataproviderDeliveryInfoField
  * @typeparam EntityT - Type of the entity the complex type field belongs to.
  */
-export class DataproviderDeliveryInfoField<EntityT extends EntityV2> extends ComplexTypeField<EntityT, DataproviderDeliveryInfo> {
+export class DataproviderDeliveryInfoField<EntityT extends EntityV4> extends ComplexTypeField<EntityT, DataproviderDeliveryInfo> {
   /**
    * Representation of the [[DataproviderDeliveryInfo.deliveryDate]] property for query construction.
    * Use to reference this property in query operations such as 'filter' in the fluent request API.
    */
-  deliveryDate: ComplexTypeDatePropertyField<EntityT> = new ComplexTypeDatePropertyField('deliveryDate', this, 'Edm.DateTime');
+  deliveryDate: ComplexTypeDatePropertyField<EntityT> = new ComplexTypeDatePropertyField('deliveryDate', this, 'Edm.Date');
 
   /**
    * Creates an instance of DataproviderDeliveryInfoField.
@@ -53,7 +53,7 @@ export namespace DataproviderDeliveryInfo {
   export const _propertyMetadata: PropertyMetadata<DataproviderDeliveryInfo>[] = [{
     originalName: 'deliveryDate',
     name: 'deliveryDate',
-    type: 'Edm.DateTime',
+    type: 'Edm.Date',
     isCollection: false
   }];
 
@@ -61,6 +61,6 @@ export namespace DataproviderDeliveryInfo {
    * @deprecated Since v1.25.0. Use `deserializeComplexTypeV2` or `deserializeComplexTypeV4` of the `@sap-cloud-sdk/core` package instead.
    */
   export function build(json: { [keys: string]: FieldType }): DataproviderDeliveryInfo {
-    return deserializeComplexTypeV2(json, DataproviderDeliveryInfo);
+    return deserializeComplexTypeV4(json, DataproviderDeliveryInfo);
   }
 }
